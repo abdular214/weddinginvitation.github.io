@@ -1,0 +1,319 @@
+:root {
+  --pink: #f14e95; 
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 /0.5);
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  min-height: 2000px;
+}
+
+.hero::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/bg-semi/bg-semi.png);
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-color: graysscale();
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+}
+
+.hero h1, .hero h4, .hero p {
+text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 {
+  font-family: "Sacramento", cursive;
+  font-size: clamp(2.5rem, 8vw, 6rem);
+  color: var(--pink);
+}
+
+.hero h4{
+  font-family: "Edu QLD Hand", cursive;
+  font-size: clamp (1rem, 8vw, 1.6rem);
+  color: var(--pink);
+}
+
+.hero p {
+  font-size: 1rem;
+  color: var(--pink);
+}
+
+.hero a {
+  color: var(--pink);
+  background-color: white;
+}
+
+.hero a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.mynavbar {
+
+}
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+font-family: 'sacramento', cursive;
+font-size: 1.5rem;
+font-weight:bold;
+}
+
+.Home {
+  background-color: #f5f5f5;
+  background-size: cover;
+  min-height: 100vh;
+  margin-top: -3rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
+}
+
+.Home h2, 
+.Story h2,
+.Galery h2,
+.RSVP  h2,
+.Gifts h2 {
+ font-family: 'sacramento';
+ color: var(--pink);
+ font-size: 3rem;
+ font-weight: bold;
+}
+
+.Home h3 {
+color: #0a0a0a;
+font-size: 1rem;
+margin-bottom: 1rem;
+}
+
+.Home p {
+font-size: 1rem;
+color: #0a0a0a;
+}
+
+.Home .Couple {
+  margin-top: 100px;
+}
+
+.Home .Couple h3 {
+  font-family: 'Sacramento';
+  font-size:  2.4rem;
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.Home .Couple p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.Home .Couple img {
+  width: 100%;
+
+}
+
+.Info {
+  background-color: rgb(0, 0, 0);
+  background-size: cover;
+  color: rgb(88, 88, 88);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.Info h2 {
+  font-family: 'sacramento';
+  color: var(--pink);
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.Info .Alamat {
+  font-size: 1rem;
+} 
+.Info .description {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+} 
+
+.Info .card {
+  background-color: rgba(255, 255, 255, 0.2)!important;
+  color: rgb(255, 255, 255) !important;
+  border: 1px solid #999;
+}
+
+.Info .card-header {
+  border-bottom: 1px solid #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 1rem;
+}
+
+.Info .card-body {
+  font-size: 1rem;
+}
+
+.Info .card-footer {
+  border-top: 1px solid #000000;
+  font-size: 0.9rem;
+  }
+  
+  .Story  {
+    background-color: #ddd5d5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .Story .Ourstory h3 {
+    font-family: 'Sacramento';
+    font-size:  2rem;
+    font-weight: bold; 
+    color: var(--pink);
+  }
+
+  .Story span, .Ourstory span, .Galery span {
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 0.9rem;
+    letter-spacing: ipx;
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .Story p, .Ourstory p, .Galery p, .RSVP p, .Gifts p {
+    font-size: 0.9rem;
+  }
+
+  .Galery, .Gifts {
+    background-color: #f5f5f5;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .Gifts .list-group .list-group-item {
+    font-size: 1.1rem !important;
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .RSVP {
+    background: #0a0a0a;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .RSVP p {
+    color: white;
+  }
+
+  .RSVP form label {
+    color: white;
+  }
+
+  .RSVP button {
+    background-color: var(--pink);
+    color: white;
+    border: 1px solid var(--pink);
+  }
+
+  .RSVP button:hover {
+    background-color: white;
+    color: var(--pink);
+    border: 1px solid white;
+  }
+
+  footer {
+    padding: 2rem;
+    background-color: var(--pink) ;
+    color: white;
+  }
+  
+  footer a {
+    color: var(--bg);
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    color: white;
+  }
+
+  footer li {
+    list-style: none;
+    display: inline;
+  }
+
+ .audio-icon-wrapper {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    oppacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+  }
+
+  @keyframes rotating {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  /* Keep Story content bounded on all screen sizes */
+  .Story .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media (min-width: 576px) {
+    .Story .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .Story .container {
+      padding-left: 2.5rem;
+      padding-right: 2.5rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .Story .container {
+      max-width: 1200px;
+    }
+  }
+
+
+
+
+
