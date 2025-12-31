@@ -89,6 +89,7 @@ font-weight:bold;
  color: var(--pink);
  font-size: 3rem;
  font-weight: bold;
+ text-align: center;
 }
 
 .Home h3 {
@@ -190,10 +191,12 @@ color: #0a0a0a;
     letter-spacing: ipx;
     display: block;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .Story p, .Ourstory p, .Galery p, .RSVP p, .Gifts p {
     font-size: 0.9rem;
+    text-align: center;
   }
 
   .Galery, .Gifts {
@@ -202,12 +205,27 @@ color: #0a0a0a;
     padding-bottom: 5rem;
   }
 
-  .Galery {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .Galery .container {
     width: 100%;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .Galery .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+  }
+
+  .Galery .gallery img {
+    width: 100%;
   }
 
   .Gifts .list-group .list-group-item {

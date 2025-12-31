@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Hand:wght@400..700&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">   
-
+<link rel="stylesheet" href="lightbox.css">
 <!-- SimplyCountdown -->
   <link rel="stylesheet" href="countdown/simplyCountdown.theme.css"/>
   <script src="countdown/simplyCountdown.umd.js"></script>
@@ -188,46 +188,38 @@
 </section>
 
 <section id="Galery" class="Galery">
+  <span>Memori Kisah Kami</span>
+  <h2>Galeri Foto</h2>
+  <p>Berikut beberapa momen kebersamaan kami yang telah diabadikan dalam bentuk foto.</p>
+  
+  
   <div class="container">
-    <div class="row justify-content-center">
-     <div class="col-md-8 col-10 text-center">
-      <span>Memori Kisah Kami</span>
-      <h2>Galeri Foto</h2>
-      <p>Berikut beberapa momen kebersamaan kami yang telah diabadikan dalam bentuk foto.</p>
-     </div>
-    </div>
+      <div class="gallery">
 
-    <div class="row row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center">
-      <div class="col mt-3">
-        <a href="https://picsum.photos/id/200/1200/768" data-toggle="lightbox" data-caption="Ferry&Reza" data-gallery="mygalery">
-          <img src="https://picsum.photos/id/200/200/300" alt="Ferry&Reza 1" class="img-fluid w-80 rounded">
+        <a href="images/1.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 1">
+          <img src="images/1.jpg">
         </a>
-      </div>
-      <div class="col mt-3">
-        <a href="https://picsum.photos/id/206/1200/768" data-toggle="lightbox" data-caption="Ferry&Reza" data-gallery="mygalery">
-          <img src="https://picsum.photos/id/206/200/300" alt="Ferry&Reza 2" class="img-fluid w-80 rounded">
+        <a href="images/2.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 2">
+          <img src="images/2.jpg">
         </a>
-      </div>
-      <div class="col mt-3">
-        <a href="https://picsum.photos/id/210/1200/768" data-toggle="lightbox" data-caption="Ferry&Reza" data-gallery="mygalery">
-          <img src="https://picsum.photos/id/210/200/300" alt="Ferry&Reza 3" class="img-fluid w-80 rounded">
+        <a href="images/3.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 3">
+          <img src="images/3.jpg">
         </a>
-      </div>
-      <div class="col mt-3">
-        <a href="https://picsum.photos/id/215/1200/768" data-toggle="lightbox" data-caption="Ferry&Reza" data-gallery="mygalery">
-          <img src="https://picsum.photos/id/215/200/300" alt="Ferry&Reza 4" class="img-fluid w-80 rounded">
+        <a href="images/4.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 4">
+          <img src="images/4.jpg">
         </a>
-      </div>
-      <div class="col mt-3">
-        <a href="https://picsum.photos/id/225/1200/768" data-toggle="lightbox" data-caption="Ferry&Reza" data-gallery="mygalery">
-          <img src="https://picsum.photos/id/225/200/300" alt="Ferry&Reza 6" class="img-fluid w-80 rounded">
+        <a href="images/5.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 5">
+          <img src="images/5.jpg">
         </a>
-      </div>
-      <div class="col mt-3">
-        <a href="https://picsum.photos/id/220/1200/768" data-toggle="lightbox" data-caption="Ferry&Reza" data-gallery="mygalery">
-          <img src="https://picsum.photos/id/220/200/300" alt="Ferry&Reza 6" class="img-fluid w-80 rounded">
+        <a href="images/6.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 6">
+          <img src="images/6.jpg">
         </a>
-      </div>
+        <a href="images/7.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 6">
+          <img src="images/7.jpg">
+        </a>
+          <a href="images/8.jpg" data-lightbox="Al&Alysa" data-title="Al&Alysa 6">
+          <img src="images/8.jpg">
+        </a>
     </div>
   </div>
 </section>
@@ -357,6 +349,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
   
     <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+
+  <script src="lightbox-plus-jquery.js"></script>
 
   <script>
     simplyCountdown('.simply-countdown', {
